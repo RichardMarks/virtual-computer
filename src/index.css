@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 16px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, white 0%, gray 100%);
+}
+
+input, textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0;
+  background: linear-gradient(to top, white 0%, lightgray 100%);
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background: linear-gradient(to bottom, white 0%, lightblue 100%);
+}
+
+.regs {
+  display: flex;
+}
+
+.reg {
+  flex-grow: 1;
+  user-select: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.src {
+  flex-grow: 1;
+}
+
+.src-container {
+  margin-top: 20px;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+}
+
+.menu-bar {
+  display: flex;
+}
+
+.menu-button {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+
+  font-size: 24px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 6px black;
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+.menu-button:hover {
+  box-shadow: 0 8px 4px white;
+  margin-top: 1px;
+}
+
+.menu-button:active {
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+.menu-button-new {
+  background: linear-gradient(to bottom, pink 0%, crimson 100%);
+}
+
+.menu-button-save {
+  background: linear-gradient(to bottom, cyan 0%, blue 100%);
+}
+
+.menu-button-run {
+  background: linear-gradient(to bottom, lime 0%, green 100%);
+}

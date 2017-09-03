@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>Virtual Computer</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div class="app">
+      <div class="regs">
+        <input class="reg reg-a" type="text" disabled />
+        <input class="reg reg-b" type="text" disabled />
+        <input class="reg reg-sp" type="text" disabled />
+        <input class="reg reg-ip" type="text" disabled />
+      </div>
+      <div class="edit">
+        <div class="src-container">
+          <textarea class="src" cols="50" rows="10"></textarea>
+        </div>
+        <div class="menu-bar">
+          <button class="menu-button menu-button-new">New</button>
+          <button class="menu-button menu-button-save">Save</button>
+          <button class="menu-button menu-button-run">Run</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
